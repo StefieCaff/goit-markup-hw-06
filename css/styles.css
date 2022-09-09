@@ -809,8 +809,10 @@ margin-left: 40px;
 .icon-checkbox{
   width: 16px;
   height: 15px;
-  background: #2196F3;
+  fill: var(--light-accent-color);
+  /* background-color: #2196F3; */
   border-radius: 2px;
+  border: 2px solid var(--main-color);
 }
 
 .checkbox-label{
