@@ -435,30 +435,47 @@
   <h2 class="modal-heading">Leave your information and we'll call you back</h2>
   <ul class="modal-list list">
     <li class="modal-item">
-    <label class="modal-label">
-    Name
-    <input type="text" name="full-name" />
-  </label>
-</li>
+      <div class="modal-icon-wrapper">
+        <label class="modal-label">
+          Name
+          <svg class="modal-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-modal-peep"></use>
+          </svg>
+        <input class="modal-input" type="text" name="full-name" />
+       </label>
+     </div>
+   </li>
 <li class="modal-item">
-  <label>
+  <label class="modal-label">
     Telephone
-    <input type="tel" name="telephone" />
+    <svg class="modal-icon" width="13" height="13">
+      <use href="./images/icons.svg#icon-modal-phone"></use>
+    </svg>
+    <input class="modal-input" type="tel" name="telephone" />
   </label>
 </li>
 <li class="modal-item">
-  <label>
+  <label class="modal-label">
     E-mail
-    <input type="email" name="E-mail" />
+    <svg class="modal-icon" width="15" height="12">
+      <use href="./images/icons.svg#icon-modal-envelope"></use>
+    </svg>
+    <input class="modal-input" type="email" name="E-mail" />
   </label>
 </li>
 <li class="modal-item">
-  <label>
-    <textarea name="Comments" placeholder="Enter the text" row="20"></textarea>
+  <label class="modal-label">
+    Comments
+    <textarea class="modal-textarea" name="Comments" placeholder="Enter the text"></textarea>
   </label>
 </li>
 <li class="modal-item checkbox-content">
-  <label><input type="checkbox" name="agree-checkbox" checked/>I agree with the newsletter and accept the Terms and Conditions</label>
+  <div>
+    <label><svg class="icon-checkbox" width="11" height="8">
+      <use href="./images/icons.svg#icon-modal-check"></use>
+    </svg><input class="modal-checkbox" type="checkbox" name="agree-checkbox" checked/>I agree with the newsletter and accept the Terms and Conditions</label>  
+    
+  </div>
 </li>
       <li class="modal-item">
         <button class="modal-button" type="submit">Send</button>

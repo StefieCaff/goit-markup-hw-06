@@ -67,8 +67,7 @@ address {
   padding: 0;
   margin: 0;
 }
- /*specific styles*/
-
+ 
 .container{
   width:1200px;
   margin: 0 auto;
@@ -79,6 +78,8 @@ address {
   padding-top:94px;
   padding-bottom:94px;
 }
+
+/*specific styles*/
 
 .header{
   border-bottom: 1px solid #ECECEC;
@@ -196,6 +197,8 @@ color: var(--dark-accent-color);
 .hero-button:hover{
   background-color: #188CE8;
 }
+
+/* hover/focus styling */
 
 .form-close:hover,
 .form-close:focus{
@@ -740,11 +743,19 @@ text-align: center;
 letter-spacing: 0.03em;
 margin-top: 40px;
 margin-right: 40px; 
-margin-bottom: 30px;
+margin-bottom: 12px;
 margin-left: 40px;
 }
 
+.modal-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-item{
+  display:flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -752,10 +763,62 @@ margin-left: 40px;
   color: #757575;
 }
 
+.modal-label{
+  display:flex;
+  flex-direction: column;
+}
+
+.modal-input{
+  padding: 13px 160px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.modal-textarea{
+  padding-right:  296px;
+  padding-bottom: 80px;
+  padding-left: 16px;
+  padding-top: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  font-family: inherit;
+  margin-top: 4px;
+}
+
+/* working this section
+.modal-icon-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.modal-icon{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  position:absolute;
+  transform: translateY (-50%);
+}
+
+*/
+
 .checkbox-content{
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.icon-checkbox{
+  
+}
+
+.modal-checkbox{
+  display: none;
 }
 
 .modal-button{
