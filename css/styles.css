@@ -782,23 +782,36 @@ transition-property: transform;
   position: absolute;
   top:65%;
   left: 15px;
+  cursor: pointer;
+  fill:currentColor;
   transform: translateY(-50%);
+  transition-property: fill border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input{
-  display: flex;
-
   width:100%;
-/* width: 448px; */
-height: 40px;
-padding-left:40px;
+  width: 448px;
+  height: 40px;
+  padding-left:40px;
+  outline: none;
+  transition-property: fill border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon:focus,
+.modal-icon:hover,
+.modal-input:focus,
+.modal-input:hover {
+fill:#2196F3;
+border-color: #2196F3;
 }
 
 .modal-textarea{
-  display: flex;
-  
   width: 100%;
-  /* width: 448px; */
+  width: 448px;
   resize:none;
   font-weight: 400;
   font-size: var(--main-font-size);
@@ -824,6 +837,7 @@ color: rgba(117, 117, 117, 0.5);
   position: absolute;
   left: -22px;
   top: 7%;
+  fill:currentColor;
 }
 
 .icon-checkbox:checked{
