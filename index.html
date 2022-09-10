@@ -421,12 +421,12 @@
           </ul>
       </div>
       <div class="subscription-content">
-          <form class="subscription-form">
+          <form class="subscription-form" action="#" method="POST" name="order-form" autocomplete="off">
             <h3 class="footer-header subscription-header">Subscribe to the Newsletter</h3>
             <ul class="subscription-list list">
               <li class="subscription-item">
                 <label class="subscription-label">
-                <input class="subscription-input" type="email" name="email" placeholder="E-mail"/>  
+                <input class="subscription-input" type="email" name="email" placeholder="E-mail" required/>  
               </label>
               </li>
               <li class="subscription-item">
@@ -461,28 +461,25 @@
           <svg class="modal-icon" width="12" height="12">
             <use href="./images/icons.svg#icon-modal-peep"></use>
           </svg>
-          <input class="modal-input" type="text" name="full-name" />
-       
+          <input class="modal-input" type="text" name="full-name" required/>
     </div>
    </li>
 <li class="modal-item">
   <div class="modal-icon-wrapper">
-  <label class="modal-label">Telephone</label>
+    <label class="modal-label">Telephone</label>
     <svg class="modal-icon" width="13" height="13">
       <use href="./images/icons.svg#icon-modal-phone"></use>
     </svg>
     <input class="modal-input" type="tel" name="telephone" />
-  
 </div>
 </li>
 <li class="modal-item">
   <div class="modal-icon-wrapper">
-  <label class="modal-label">E-mail</label>
-  <svg class="modal-icon" width="15" height="12">
-    <use href="./images/icons.svg#icon-modal-envelope"></use>
-  </svg>
-  <input class="modal-input" type="email" name="E-mail" />
-  
+    <label class="modal-label">E-mail</label>
+    <svg class="modal-icon" width="15" height="12">
+      <use href="./images/icons.svg#icon-modal-envelope"></use>
+    </svg>
+    <input class="modal-input" type="email" name="E-mail" required/>
 </div>
 </li>
 <li class="modal-item">
@@ -491,11 +488,12 @@
   
 </li>
 <li class="modal-item checkbox-content">
-    <div class="modal-icon-wrapper">
+    <div class="modal-icon-wrapper checkbox-wrapper">
+        <input class="modal-checkbox" type="checkbox" name="agree-checkbox" />
          <svg class="icon-checkbox" width="16" height="15">
           <use href="./images/icons.svg#icon-modal-checkbox"></use>
         </svg>
-        <input class="modal-checkbox" type="checkbox" name="agree-checkbox"  checked />
+        
         <label class="checkbox-label">I agree with the newsletter and accept the Terms and Conditions</label>
   </div>
   </li>
