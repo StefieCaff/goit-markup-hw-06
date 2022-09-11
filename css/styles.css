@@ -656,41 +656,40 @@ margin-right: 50px;
 
 .subscription-input {
   box-sizing:border-box;
+  padding-left: 20px;
   height: 50px;
   width: 358px;
   /* width: 100%; */
   margin-top: 20px;
   background-color:#2F303A;
+  color: var(--light-accent-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+   transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-::placeholder {
+/* ::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.subscription-icon-wrapper {
-  position: relative;
-}
+} */
 
 .subscription-icon {
-  position: absolute;
-  right: 28px;
-  top: 33px;
-  fill: var(--light-accent-color);
+padding-left: 10px;
+  fill: currentColor;
 }
 
 .subscription-button {
-  padding: 10px 82px 10px 48px;
+  padding: 10px 0px;
+  width: 200px;
   margin-left: 12px;
   margin-top: 20px;
+  background-color: var(--dark-accent-color);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -824,14 +823,14 @@ margin-right: 50px;
   cursor: pointer;
 }
 
-::placeholder{
+/* ::placeholder{
   padding: 12px 16px;
 font-weight: 400;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
-}
+} */
 
 .checkbox-content{
   padding: 0px 11px 0px 37px;
@@ -936,7 +935,7 @@ color: var(--dark-accent-color);
 
 .subscription-input:hover,
 .subscription-input:focus {
-  border-color: #2196F3;
+  border-color: var(--light-accent-color);
 }
 
 .form-close:hover,

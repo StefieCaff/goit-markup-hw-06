@@ -366,7 +366,6 @@
             </ul>
           </div>
         </section>
-
   </main>
     
   <footer class="footer">
@@ -421,30 +420,21 @@
           </ul>
       </div>
       <div class="subscription-content">
-          <form class="subscription-form" action="#" method="POST" name="order-form" autocomplete="off">
             <h3 class="footer-header subscription-header">Subscribe to the Newsletter</h3>
-            <ul class="subscription-list list">
-              <li class="subscription-item">
+            <form class="subscription-form" action="#" method="POST" name="order-form" autocomplete="off">
                 <label class="subscription-label">
                 <input class="subscription-input" type="email" name="email" placeholder="E-mail" required/>  
-              </label>
-              </li>
-              <li class="subscription-item">
-              <div class="subscription-icon-wrapper">
-                <svg class="subscription-icon" width="24" height="24">
+                </label>
+                <button class="subscription-button" type="submit">Subscribe
+                  <svg class="subscription-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send-airplane"></use>
                 </svg>
-                <button class="subscription-button" type="submit">Subscribe</button> 
-              </div>
-              </li>
-            </ul>
+              </button>     
              </form>
       </div>
-       
     </div>
   </footer>
 
-  <section class="section">
   <div class="backdrop is-hidden" data-modal>
     <div class="modal-content">
       <button type="button" class="form-close button" data-modal-close="">
@@ -452,8 +442,9 @@
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
       </button>
-    <form class="modal-form" action="#" method="POST" name="order-form" autocomplete="off">
-    <h2 class="modal-heading">Leave your information and we'll call you back</h2>
+      <h3 class="modal-heading">Leave your information and we'll call you back</h3>
+      <form class="modal-form" action="#" method="POST" name="order-form" autocomplete="off">
+    
     <ul class="modal-list list">
       <li class="modal-item">
         <div class="modal-icon-wrapper">
@@ -504,7 +495,6 @@
     </form>
   </div>
 </div>
-  </section>
 
   <script src="./js/modal.js"></script>
 </body>
