@@ -885,6 +885,14 @@ margin-right: 50px;
   cursor: pointer;
 }
 
+.modal-link{
+  text-decoration: underline;
+  color: var(--dark-accent-color);
+  transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* hover/focus styling */
 
 .current-link,
@@ -976,4 +984,9 @@ border-radius: 4px;
 .modal-label:hover,
 .modal-label:focus-within{
   fill: #2196F3;
+}
+
+.modal-link:focus,
+.modal-link:hover{
+  text-decoration: none;
 }
